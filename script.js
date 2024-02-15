@@ -15,7 +15,7 @@ var ShoppingCart = (function($) {
       id: 0,
       name: "GCP BaNCS",
       description: "With GCP, you get access to Google's unparalleled infrastructure, ensuring lightning-fast performance and minimal downtime.",
-      imageUrl: "./img/gcp.jpg",
+      imageUrl: "gcp.jpg",
       price: 1199
     },
     
