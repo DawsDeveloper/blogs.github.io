@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>GCP Hosting Platform</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  
+  </head>
+  <body>
+ 
+  <section class="tab-section" style="height: 40vh; background: white;">
+    <div class="container">
+        <div class="tab-menu">
+            <button class="tab-button active" data-tab="tab1">Overview</button>
+            <button class="tab-button" data-tab="tab2" id='tab_btn2'>Select Product</button>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <div class="description">
+                    <h3>AMAZON WEB SERVICES</h3>
+                    <div class="part1">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <div class="description" style="height:100vh;">
+                    <h3>Get it now</h3>
+                    <div class="part1">
+                        <p>You can download the app and easiest way to get up and running with large language models locally.</p>
+                        <div class="custom-container">
+                            <div class="custom-select-btn">
+                                <span class="custom-btn-text">Select Service</span>
+                                <span class="custom-arrow-dwn">
+                                    <i class="custom-icon fa-solid fa-chevron-down"></i>
+                                </span>
+                            </div>
+                            <ul class="custom-list-items">
+                                <li class="custom-item">
+                                    <span class="custom-checkbox">
+                                        <i class="custom-icon fa-solid fa-check check-icon"></i>
+                                    </span>
+                                    <span class="custom-item-text">BAL</span>
+                                </li>
+                                <li class="custom-item">
+                                    <span class="custom-checkbox">
+                                        <i class="custom-icon fa-solid fa-check check-icon"></i>
+                                    </span>
+                                    <span class="custom-item-text">MIM</span>
+                                </li>
+                                <li class="custom-item">
+                                    <span class="custom-checkbox">
+                                        <i class="custom-icon fa-solid fa-check check-icon"></i>
+                                    </span>
+                                    <span class="custom-item-text">CIF</span>
+                                </li>
+                                <li class="custom-item">
+                                    <span class="custom-checkbox">
+                                        <i class="custom-icon fa-solid fa-check check-icon"></i>
+                                    </span>
+                                    <span class="custom-item-text">SIS</span>
+                                </li>
+                                <li class="custom-item">
+                                    <span class="custom-checkbox">
+                                        <i class="custom-icon fa-solid fa-check check-icon"></i>
+                                    </span>
+                                    <span class="custom-item-text">PSCS</span>
+                                </li>
+                                <li class="custom-item">
+                                    <span class="custom-checkbox">
+                                        <i class="custom-icon fa-solid fa-check check-icon"></i>
+                                    </span>
+                                    <span class="custom-item-text">LSDS</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+</main>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const tabId = this.getAttribute('data-tab');
+
+            // Hide all tab contents
+            tabContents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+
+            // Remove active class from all tab buttons
+            tabButtons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+
+            // Add active class to the clicked tab button
+            this.classList.add('active');
+        });
+    });
+});
+
+</script>
+ 
+ <!---------------------------------------------------------------------->     
+
+ <main style="background: #eee;">
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+   <div class="container">
+    
+    <div style="display: inline-flex;">
+      <div style="margin-right: 20px;">
+
+        <div class="card">
+<div class="header">
+            <span class="title" style="color: #483D8B;">BaNCS</span>
+            
+          </div>
+          <section>
+              <div>
+                  
+              </div>
+
+   <!-------------- why gcp @bancs ---------->           
+          </section>
+<section>
+          <p class="desc" style="color: #483D8B;">Why GCP @BaNCS?</p>
+          <ul class="lists">
+            <li class="list">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Unmatched Performance: With GCP, you get access to Google's unparalleled infrastructure, ensuring lightning-fast performance and minimal downtime. </span>
+            </li>
+            <li class="list">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Scalability on Demand: Whether you're a startup experiencing rapid growth or an established enterprise expanding your operations, GCP offers unmatched scalability. </span>
+            </li>
+            <li class="list">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Robust Security: Security is paramount in today's digital landscape, and GCP is committed to keeping your data safe and secure. </span>
+            </li>
+
+          </ul>
+
+          
+        </div>
+
+      </div>
+      </section>
+ <!---------menu selection ------>
+<section>
+    
+</section>
+
+ <!--------menu end---------->
+
+    <div class="products">
+      
+   
+
+      
+    </div><!-- products -->
+    </section>
+    </div>
+    <div class="shopping-cart">
+      <div class="shopping-cart-head">
+        <span class="product-quantity">0</span> Product(s) in Cart
+      </div>
+      <ul class="shopping-cart-list">
+      </ul>
+      <div class="cart-buttons">
+        <a href="#0" class="button empty-cart-btn">Empty</a>
+        <a href="checkout.html" class="button cart-checkout">Checkout - <span class="total-price">$0</span></a>
+      </div>
+    </div>
+  </div><!-- container -->   
+     <!-- END EDMO HTML (Happy Coding!)-->
+ </main>
+ 
+      
+  <footer>
+    <div class="container">
+        <p>&copy; 2024 Bancs. All rights reserved.</p>
+    </div>
+</footer>
+  
+      <!-- Script Js -->
+      <script type="text/javascript">const selectBtn = document.querySelector(".custom-select-btn"),
+      items = document.querySelectorAll(".custom-item");
+
+selectBtn.addEventListener("click", () => {
+    selectBtn.classList.toggle("open");
+});
+
+items.forEach(item => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("checked");
+
+        let checked = document.querySelectorAll(".custom-item.checked"),
+            btnText = document.querySelector(".custom-btn-text");
+
+        if(checked && checked.length > 0){
+            btnText.innerText = `${checked.length} Selected`;
+        }else{
+            btnText.innerText = "Select Service";
+        }
+    });
+});
+</script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+      <script src="./js/script.js"></script>
+      
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContainerHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav>
+            <ul> 
+                <li><a href="#" class="active">Bancs Services</a></li>
+                <li><a href="#hero">Explore</a></li>
+                <li><a href="#featured-html">HTML5</a></li>
+                <li><a href="#featured-css">CSS3</a></li>
+                <li><a href="#featured-js">JavaScript</a></li>
+                <li><a href="#featured-react">React</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    
+
+
+<!-------------one more section end--------->
+
+
+<!----------second more section end------->
+
+
+
+<!-----section for tab switch --------->
+<section class="tab-section" style="height: 80vh;">
+    <div class="container">
+        <div class="tab-menu">
+            <button class="tab-button active" data-tab="tab1">Overview</button>
+            <button class="tab-button" data-tab="tab2">Tags</button>
+            
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+                <div class="description">
+                    <h3>AMAZON WEB SERVICES<br></h3>
+                    <div class="part1">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div id="tab2" class="tab-pane">
+                <div class="description">
+                    <h3>Get it now</h3>
+                    <div class="part1">
+                        <p>you can download the app and easiest way to get up and running with large language models locally.   </p>
+                    </div>
+                    <div class="part2">
+                        <div class="part2" style="padding-top: 20px;">
+                        
+                        <button class="buttonDownload">Download</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+
+<footer style="height: 20vh;">
+    <div class="container">
+        <p>&copy; 2024 Bancs. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-pane');
+
+    tabButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const tabId = this.getAttribute('data-tab');
+
+            // Hide all tab contents
+            tabContents.forEach(function(content) {
+                content.classList.remove('active');
+            });
+
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+
+            // Remove active class from all tab buttons
+            tabButtons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+
+            // Add active class to the clicked tab button
+            this.classList.add('active');
+        });
+    });
+});
+
+</script>
+</body>
+</html>
